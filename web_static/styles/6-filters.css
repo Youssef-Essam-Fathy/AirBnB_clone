@@ -6,6 +6,7 @@
         border: 1px solid #DDDDDD;
         border-radius: 4px;
         position: relative;
+        display: flex;
     }
 .filters button
     {
@@ -29,7 +30,7 @@
         height: 100%;
         width: 25%;
         display: inline-block;
-        top: 0px;
+        top: 0;
         position: relative;
     }
 .locations
@@ -46,3 +47,48 @@
         font-size: 14px;
         margin: 2px 20px;
     }
+.popover
+    {
+        background-color: #FAFAFA;
+        border: 1px solid #DDDDDD;
+        border-radius: 4px;
+        display: none;
+        top: 100%;
+        position: absolute;
+        left: 0;
+        width: 250px;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 20px;
+        list-style: none;
+    }
+div:hover > .popover
+    {
+        display: block;
+        cursor: pointer;
+    }
+.locations:hover > .popover 
+    {
+        display: block;
+    }
+.popover li
+    {
+        margin: 10px 0px 5px;
+        list-style: none;
+        padding-left: 10px;
+        display: block;
+        grid-row-gap: 4px;
+    }
+.popover h2
+    {
+        font-size: 16px;
+    }
+.amenities:hover > .popover
+    {
+        display: block;
+    }
+.popover ul 
+    {
+        list-style-type: none;
+    }
+        
